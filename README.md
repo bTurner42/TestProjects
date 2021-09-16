@@ -26,6 +26,16 @@ Acceptance Criteria: (in order of precedence)
 
 ## Architectural Break-down:
 - Language Used: Java
-- Automation Tool: RestAssured
+  - Justification: This is the native language used for my automated tool of choice. This was also the first coding language I was introduced to and one I've used the least in my career as a whole. It's time for a refreshing challenge!
+- Automation Framework: RestAssured
   - Tool pre-requisites: Java JDK, Maven, Eclipse
-  - Justification: 
+  - Test Framework: JUnit
+  - Justification (Why RestAssured): 
+    - It removes the need for writing a lot of boilerplate code required to set up an HTTP connection, send a request and receive and parse a response
+    - Supports a Gherkin Given/When/Then test notation which is human readable
+      - Easy to push for BDD (Business Driven Design) at the project level in this case
+        - Bridging the gap between business strategy/requirements and IT solutions
+      - Easy/quick translation of business requirements to automated code
+        - Both IT and business stakeholders can read and understand what's happening here
+    - Easy integration into a continuous integration / continuous delivery setup, especially when combined with a Java testing framework such as JUnit or TestNG
+    - A common tool used in industry that I've heard up but never used directly (perfect opportunity to challenge myself by learning something new!)
