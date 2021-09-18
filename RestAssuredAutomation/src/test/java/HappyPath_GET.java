@@ -8,7 +8,7 @@ public class HappyPath_GET {
 	
 	//GET a specified post.
 	@Test
-	void getAResource() {
+	void getPost() {
 		given().
 			get("https://jsonplaceholder.typicode.com/posts/1").
 		then().
@@ -18,7 +18,7 @@ public class HappyPath_GET {
 	
 	//GET a list of all posts.
 	@Test
-	void listAllResources()
+	void listAllPosts()
 	{
 		given().
 			get("https://jsonplaceholder.typicode.com/posts").
