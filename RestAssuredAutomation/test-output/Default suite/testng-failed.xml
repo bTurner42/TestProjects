@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HappyPath_POST">
+      <class name="SadPath_DELETE">
         <methods>
-          <include name="createAResource"/>
+          <include name="deletePost_204"/>
         </methods>
-      </class> <!-- HappyPath_POST -->
+      </class> <!-- SadPath_DELETE -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

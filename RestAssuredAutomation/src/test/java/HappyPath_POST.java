@@ -46,7 +46,7 @@ public class HappyPath_POST {
 		
 	}
 	
-	//Add to a new photo to a posted album.
+	//Add a new photo to a posted album.
 	@Test
 	public void addPhotoToAlbum() {
 		JSONObject request = new JSONObject();
