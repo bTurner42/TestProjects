@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
 
-public class SadPath_DELETE {
+public class SadPath_DELETE extends TestDataSets {
 	//Response status code does not return 204.
-	@Test
-	public void deletePostResponse_isNot204() {
+	@Test(dataProvider = "PostIdData")
+	public void deletePostResponse_isNot204(int postId) {
 		
 		//Validate status code does not return 204 but 200. 
-		Response response = delete("https://jsonplaceholder.typicode.com/posts/{postId}", 1);
+		Response response = delete("https://jsonplaceholder.typicode.com/posts/{postId}", postId);
 		int statusCode = response.getStatusCode();
 		Assert.assertNotSame(statusCode, 204);
 	}

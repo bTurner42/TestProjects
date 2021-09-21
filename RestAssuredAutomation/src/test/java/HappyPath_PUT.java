@@ -1,17 +1,16 @@
 import static io.restassured.RestAssured.*;
-
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
-public class HappyPath_PUT {
+public class HappyPath_PUT extends TestDataSets{
 	
 	//Update the entire post record.
-	@Test
-	public void updatePost() {
+	@Test(dataProvider = "DataForPost")
+	public void updatePost(String title, String body, int userId) {
 		JSONObject request = new JSONObject();
-		request.put("title", "Curse of the Black Pearl");
-		request.put("body", "The ship needs a captain");
-		request.put("userId", 11);
+		request.put("title", title);
+		request.put("body", body);
+		request.put("userId", userId);
 		// System.out.println(request);
 		
 		//Validate PUT request is successful + resource is updated. 
@@ -26,10 +25,10 @@ public class HappyPath_PUT {
 	}
 	
 	//Partially update a post.
-	@Test
-	public void patchPost() {
+	@Test(dataProvider = "TitleData")
+	public void patchPost(String title) {
 		JSONObject request = new JSONObject();
-		request.put("title", "Davey Jones Locker");
+		request.put("title", title);
 		// System.out.println(request);
 		
 		//Validate PATCH request is successful + resource was updated. 

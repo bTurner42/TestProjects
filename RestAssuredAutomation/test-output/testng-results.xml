@@ -1,13 +1,453 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-19T21:30:13 EDT" name="Default suite" finished-at="2021-09-19T21:30:16 EDT" duration-ms="2903">
+  <suite started-at="2021-09-20T23:26:20 EDT" name="Default suite" finished-at="2021-09-20T23:26:29 EDT" duration-ms="8880">
     <groups>
     </groups>
-    <test started-at="2021-09-19T21:30:13 EDT" name="Default test" finished-at="2021-09-19T21:30:16 EDT" duration-ms="2903">
+    <test started-at="2021-09-20T23:26:20 EDT" name="Default test" finished-at="2021-09-20T23:26:29 EDT" duration-ms="8880">
+      <class name="HappyPath_PUT">
+        <test-method signature="patchPost(java.lang.String)[pri:0, instance:HappyPath_PUT@467f77a5]" started-at="2021-09-20T23:26:20 EDT" name="patchPost" data-provider="TitleData" finished-at="2021-09-20T23:26:24 EDT" duration-ms="4480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stranger Things]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchPost -->
+        <test-method signature="patchPost(java.lang.String)[pri:0, instance:HappyPath_PUT@467f77a5]" started-at="2021-09-20T23:26:24 EDT" name="patchPost" data-provider="TitleData" finished-at="2021-09-20T23:26:25 EDT" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mortal Kombat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchPost -->
+        <test-method signature="patchPost(java.lang.String)[pri:0, instance:HappyPath_PUT@467f77a5]" started-at="2021-09-20T23:26:25 EDT" name="patchPost" data-provider="TitleData" finished-at="2021-09-20T23:26:25 EDT" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[300]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchPost -->
+        <test-method signature="patchPost(java.lang.String)[pri:0, instance:HappyPath_PUT@467f77a5]" started-at="2021-09-20T23:26:25 EDT" name="patchPost" data-provider="TitleData" finished-at="2021-09-20T23:26:25 EDT" duration-ms="161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Spawn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchPost -->
+        <test-method signature="updatePost(java.lang.String,java.lang.String,int)[pri:0, instance:HappyPath_PUT@467f77a5]" started-at="2021-09-20T23:26:25 EDT" name="updatePost" data-provider="DataForPost" finished-at="2021-09-20T23:26:25 EDT" duration-ms="164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Deadman's Chest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yo ho, yo ho, a pirate's life for me!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePost -->
+        <test-method signature="updatePost(java.lang.String,java.lang.String,int)[pri:0, instance:HappyPath_PUT@467f77a5]" started-at="2021-09-20T23:26:25 EDT" name="updatePost" data-provider="DataForPost" finished-at="2021-09-20T23:26:25 EDT" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Davey Jones Locker]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[We're sailing the seven seas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePost -->
+        <test-method signature="updatePost(java.lang.String,java.lang.String,int)[pri:0, instance:HappyPath_PUT@467f77a5]" started-at="2021-09-20T23:26:25 EDT" name="updatePost" data-provider="DataForPost" finished-at="2021-09-20T23:26:25 EDT" duration-ms="157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Curse of the Black Pearl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[The ship needs a captain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePost -->
+      </class> <!-- HappyPath_PUT -->
+      <class name="HappyPath_GET">
+        <test-method signature="getPost(int)[pri:0, instance:HappyPath_GET@6e5bfdfc]" started-at="2021-09-20T23:26:26 EDT" name="getPost" data-provider="PostIdData" finished-at="2021-09-20T23:26:26 EDT" duration-ms="129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPost -->
+        <test-method signature="getPost(int)[pri:0, instance:HappyPath_GET@6e5bfdfc]" started-at="2021-09-20T23:26:26 EDT" name="getPost" data-provider="PostIdData" finished-at="2021-09-20T23:26:26 EDT" duration-ms="117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPost -->
+        <test-method signature="getPost(int)[pri:0, instance:HappyPath_GET@6e5bfdfc]" started-at="2021-09-20T23:26:26 EDT" name="getPost" data-provider="PostIdData" finished-at="2021-09-20T23:26:26 EDT" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPost -->
+        <test-method signature="getPost(int)[pri:0, instance:HappyPath_GET@6e5bfdfc]" started-at="2021-09-20T23:26:26 EDT" name="getPost" data-provider="PostIdData" finished-at="2021-09-20T23:26:27 EDT" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPost -->
+        <test-method signature="listAllPosts()[pri:0, instance:HappyPath_GET@6e5bfdfc]" started-at="2021-09-20T23:26:27 EDT" name="listAllPosts" finished-at="2021-09-20T23:26:27 EDT" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listAllPosts -->
+      </class> <!-- HappyPath_GET -->
+      <class name="HappyPath_DELETE">
+        <test-method signature="deletePost(int)[pri:0, instance:HappyPath_DELETE@79ab3a71]" started-at="2021-09-20T23:26:25 EDT" name="deletePost" data-provider="PostIdData" finished-at="2021-09-20T23:26:26 EDT" duration-ms="137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePost -->
+        <test-method signature="deletePost(int)[pri:0, instance:HappyPath_DELETE@79ab3a71]" started-at="2021-09-20T23:26:26 EDT" name="deletePost" data-provider="PostIdData" finished-at="2021-09-20T23:26:26 EDT" duration-ms="118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePost -->
+        <test-method signature="deletePost(int)[pri:0, instance:HappyPath_DELETE@79ab3a71]" started-at="2021-09-20T23:26:26 EDT" name="deletePost" data-provider="PostIdData" finished-at="2021-09-20T23:26:26 EDT" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePost -->
+        <test-method signature="deletePost(int)[pri:0, instance:HappyPath_DELETE@79ab3a71]" started-at="2021-09-20T23:26:26 EDT" name="deletePost" data-provider="PostIdData" finished-at="2021-09-20T23:26:26 EDT" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePost -->
+      </class> <!-- HappyPath_DELETE -->
+      <class name="HappyPath_POST">
+        <test-method signature="addPhotoToAlbum(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:27 EDT" name="addPhotoToAlbum" data-provider="DataForPhotoAlbum" finished-at="2021-09-20T23:26:27 EDT" duration-ms="204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Azetc Necklace]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://via.placeholder.com/600/d32890]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://via.placeholder.com/150/d32890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPhotoToAlbum -->
+        <test-method signature="addPhotoToAlbum(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:27 EDT" name="addPhotoToAlbum" data-provider="DataForPhotoAlbum" finished-at="2021-09-20T23:26:27 EDT" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Treasure Chest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://via.placeholder.com/400/d32891]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://via.placeholder.com/160/d32891]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPhotoToAlbum -->
+        <test-method signature="addPhotoToAlbum(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:27 EDT" name="addPhotoToAlbum" data-provider="DataForPhotoAlbum" finished-at="2021-09-20T23:26:27 EDT" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Heart of the Ocean]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://via.placeholder.com/333/d32800]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://via.placeholder.com/170/d32890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPhotoToAlbum -->
+        <test-method signature="createPost(java.lang.String,java.lang.String,int)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:27 EDT" name="createPost" data-provider="DataForPost" finished-at="2021-09-20T23:26:27 EDT" duration-ms="117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Deadman's Chest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yo ho, yo ho, a pirate's life for me!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost -->
+        <test-method signature="createPost(java.lang.String,java.lang.String,int)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:27 EDT" name="createPost" data-provider="DataForPost" finished-at="2021-09-20T23:26:28 EDT" duration-ms="113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Davey Jones Locker]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[We're sailing the seven seas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost -->
+        <test-method signature="createPost(java.lang.String,java.lang.String,int)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:28 EDT" name="createPost" data-provider="DataForPost" finished-at="2021-09-20T23:26:28 EDT" duration-ms="129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Curse of the Black Pearl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[The ship needs a captain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost -->
+        <test-method signature="createPostComment(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:28 EDT" name="createPostComment" data-provider="DataForCreateComment" finished-at="2021-09-20T23:26:28 EDT" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brittany Turner]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[brittany.turner@fisglobal.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[This was the best movie ever]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPostComment -->
+        <test-method signature="createPostComment(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:28 EDT" name="createPostComment" data-provider="DataForCreateComment" finished-at="2021-09-20T23:26:28 EDT" duration-ms="124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brittany Jones]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[brittany.jones@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[This was an ok movie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPostComment -->
+        <test-method signature="createPostComment(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HappyPath_POST@51bde877]" started-at="2021-09-20T23:26:28 EDT" name="createPostComment" data-provider="DataForCreateComment" finished-at="2021-09-20T23:26:28 EDT" duration-ms="134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Elizabeth Swan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[elizabethswan@hotmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[This was a stellar movie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPostComment -->
+      </class> <!-- HappyPath_POST -->
       <class name="SadPath_DELETE">
-        <test-method signature="deletePostResponse_isNot204()[pri:0, instance:SadPath_DELETE@69e1dd28]" started-at="2021-09-19T21:30:13 EDT" name="deletePostResponse_isNot204" finished-at="2021-09-19T21:30:16 EDT" duration-ms="2843" status="PASS">
+        <test-method signature="deleteAllPosts()[pri:0, instance:SadPath_DELETE@60b85ba1]" started-at="2021-09-20T23:26:28 EDT" name="deleteAllPosts" finished-at="2021-09-20T23:26:28 EDT" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAllPosts -->
+        <test-method signature="deletePostResponse_isNot204(int)[pri:0, instance:SadPath_DELETE@60b85ba1]" started-at="2021-09-20T23:26:28 EDT" name="deletePostResponse_isNot204" data-provider="PostIdData" finished-at="2021-09-20T23:26:28 EDT" duration-ms="106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePostResponse_isNot204 -->
+        <test-method signature="deletePostResponse_isNot204(int)[pri:0, instance:SadPath_DELETE@60b85ba1]" started-at="2021-09-20T23:26:28 EDT" name="deletePostResponse_isNot204" data-provider="PostIdData" finished-at="2021-09-20T23:26:28 EDT" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePostResponse_isNot204 -->
+        <test-method signature="deletePostResponse_isNot204(int)[pri:0, instance:SadPath_DELETE@60b85ba1]" started-at="2021-09-20T23:26:28 EDT" name="deletePostResponse_isNot204" data-provider="PostIdData" finished-at="2021-09-20T23:26:29 EDT" duration-ms="122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePostResponse_isNot204 -->
+        <test-method signature="deletePostResponse_isNot204(int)[pri:0, instance:SadPath_DELETE@60b85ba1]" started-at="2021-09-20T23:26:29 EDT" name="deletePostResponse_isNot204" data-provider="PostIdData" finished-at="2021-09-20T23:26:29 EDT" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletePostResponse_isNot204 -->
