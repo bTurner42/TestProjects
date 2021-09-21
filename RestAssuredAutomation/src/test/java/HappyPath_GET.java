@@ -1,16 +1,15 @@
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
-import io.restassured.response.Response;
 
 
-public class HappyPath_GET {
+public class HappyPath_GET extends TestDataSets {
 	
 	//GET a specified post.
-	@Test
-	void getPost() {
+	@Test(dataProvider = "PostIdData")
+	void getPost(int postId) {
 		given().
-			get("https://jsonplaceholder.typicode.com/posts/1").
+			get("https://jsonplaceholder.typicode.com/posts/{postId}", postId).
 		then().
 			statusCode(200).
 			log().body();

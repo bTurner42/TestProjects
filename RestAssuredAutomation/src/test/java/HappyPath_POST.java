@@ -3,15 +3,16 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
 
-public class HappyPath_POST {
+public class HappyPath_POST extends TestDataSets{
+	
 	
 	//Create a new post.
-	@Test
-	public void createPost() {
+	@Test(dataProvider = "DataForPost")
+	public void createPost(String title, String body, int userId) {
 		JSONObject request = new JSONObject();
-		request.put("title", "Deadman's Chest");
-		request.put("body", "Yo ho, yo ho, a private's life for me!");
-		request.put("userId", 11);
+		request.put("title", title);
+		request.put("body", body);
+		request.put("userId", userId);
 		// System.out.println(request);
 		
 		//Validate POST request is successful + resource was created. 
@@ -26,12 +27,12 @@ public class HappyPath_POST {
 	}
 	
 	//Create a post comment.
-	@Test
-	public void createPostComment() {
+	@Test(dataProvider = "DataForCreateComment")
+	public void createPostComment(String name, String email, String body) {
 		JSONObject request = new JSONObject();
-		request.put("name", "Brittany Turner");
-		request.put("email", "brittanymgturner@gmail.com");
-		request.put("body", "This was the best movie ever");
+		request.put("name", name);
+		request.put("email", email);
+		request.put("body", body);
 		// System.out.println(request);
 		
 		//Validate POST request is successful + resource was created. 
@@ -47,12 +48,12 @@ public class HappyPath_POST {
 	}
 	
 	//Add a new photo to a posted album.
-	@Test
-	public void addPhotoToAlbum() {
+	@Test(dataProvider = "DataForPhotoAlbum")
+	public void addPhotoToAlbum(String title, String url, String thumbnailUrl) {
 		JSONObject request = new JSONObject();
-		request.put("title", "Aztec necklace");
-		request.put("url", "https://via.placeholder.com/600/d32890");
-		request.put("thumbnailUrl", "https://via.placeholder.com/150/d32890");
+		request.put("title", title);
+		request.put("url", url);
+		request.put("thumbnailUrl", thumbnailUrl);
 		System.out.println(request);
 		
 		//Validate POST request is successful + resource was created. 
